@@ -1,5 +1,5 @@
 # Interview Scheduler
-
+┌( ಠ_ಠ )┘ (ノ ^o^)ノ◙▒◙ ♫♩♬ ﾍ(￣ー￣)ﾉ ◙▒◙ ♫♩♬ ~( ˘▾˘~) (~‾⌣‾)~
 ## Setup
 
 Install dependencies with `npm install`.
@@ -21,3 +21,7 @@ npm test
 ```sh
 npm run storybook
 ```
+
+!["screenshot description"](https://github.com/michaelruhl/interview_scheduler/blob/master/docs/scheduler1.png)
+!["screenshot description"](https://github.com/michaelruhl/interview_scheduler/blob/master/docs/scheduler2.png)
+!["screenshot description"](https://github.com/michaelruhl/interview_scheduler/blob/master/docs/scheduler3.png)
