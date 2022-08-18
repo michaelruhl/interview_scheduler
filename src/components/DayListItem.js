@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/DayListItem.scss";
 import classNames from "classnames";
+import { getAllByTestId } from "@testing-library/react";
 // import FormatSpots from "./FormatSpots"
 
 // export default function DayListItem(props) {
@@ -54,7 +55,7 @@ export default function DayListItem(props) {
       "day-list__item--full": props.spots === 0,
     });
     return (
-      <li className={dayClass} onClick={() => props.setDay(props.name)}>
+      <li data-testid="day"className={dayClass} onClick={() => props.setDay(props.name)}>
         <h2 className="text--regular">{props.name}</h2>
         <h3 className="text--light">{formatSpots(props.spots)}remaining</h3>
         {/* {formatSpots(props.spots)}    */}
