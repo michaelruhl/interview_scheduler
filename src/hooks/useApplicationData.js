@@ -10,6 +10,7 @@ export default function useApplicationData() {
     interviewers: {},
   });
 
+  
   function bookInterview(id, interview) {
     const appointment = {
       ...state.appointments[id],

@@ -14,10 +14,10 @@ export default function Application(props) {
     useApplicationData();
   const dailyAppointments = getAppointmentsForDay(state, state.day);
   const dailyInterviewers = getInterviewersForDay(state, state.day);
-  // console.log(state)
   const schedule = dailyAppointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
 
+    // return appointment component
     return (
       <Appointment
         key={appointment.id}
@@ -30,7 +30,7 @@ export default function Application(props) {
       />
     );
   });
-
+  // return schedule
   return (
     <main className="layout">
       <section className="sidebar">

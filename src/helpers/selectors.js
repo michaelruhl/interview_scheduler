@@ -29,16 +29,11 @@ export function getInterviewersForDay(state, day) {
     if ( state.days.length === 0 || filteredNames === undefined) {
       return [];
     }
-    // const filteredInterviewers = filteredNames.interviewers.map(
-    //   (interviewer) => {
-    //     return state.interviewers[interviewer];
-    //   }
-    // );
+ 
     return filteredNames.interviewers.map(id => state.interviewers[id])
-    //   console.log(filteredInterviewers)
-    // return filteredInterviewers;
+   
   }
 
-  // getInterviewersForDay(state, 'Monday')
+ 
 
   

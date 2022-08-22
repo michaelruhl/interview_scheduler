@@ -25,3 +25,17 @@ npm run storybook
 !["screenshot description"](https://github.com/michaelruhl/interview_scheduler/blob/master/docs/scheduler1.png)
 !["screenshot description"](https://github.com/michaelruhl/interview_scheduler/blob/master/docs/scheduler2.png)
 !["screenshot description"](https://github.com/michaelruhl/interview_scheduler/blob/master/docs/scheduler3.png)
+
+### About
+
+This project is about scheduling interviews with interviewers.
+
+Pick a timeslot and an interviewer on a specific day.
+
+### Dependencies
+
+install dependencies
+
+npm i
+
+### this project requires the scheduler-api

@@ -3,11 +3,9 @@ import "../styles/InterviewerListItems.scss";
 import classNames from "classnames";
 
 export default function InterviewerListItem(props) {
-  // console.log('*****DISTINCTION', props);
   const interviewerClass = classNames("interviewers__item", {
     "interviewers__item--selected": props.selected,
   });
-  // console.log(interviewerClass)
 
 
   return (

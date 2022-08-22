@@ -20,23 +20,28 @@ const ERROR_DELETE = "ERROR_DELETE"
 const ERROR = "ERROR"
 const CONFIRM = "CONFIRM"
 
+
+
 export default function Appointment(props) {
   const { mode, transition, back } = useVisualMode(
     props.interview ? SHOW : EMPTY
   );
 
+  // function for saving interview and transitioning state
   function save(name, interviewer) {
     const interview = {
       student: name,
       interviewer,
     };
-    transition(SAVING, true);
+    transition(SAVING);
+    // removed ", true"
     
     props.bookInterview(props.id, interview)
       .then(() => transition(SHOW))
         .catch(error => transition(ERROR_SAVE, true));
   }
 
+  // function for deleting appointment and transitioning state
   function deleteAppointment(name, interviewer) {
     const interview = {
       students: null,
